@@ -1,0 +1,17 @@
+body {
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+::selection {
+    color: rgb(43, 232, 43);
+    background-color: rgb(0, 0, 0);
+}
+#main-menu {
+    background: #000;
+}
+
+.menu:hover {
+  -webkit-text-fill-color: transparent; /* Will override color (regardless of order) */
+  -webkit-text-stroke-width: 1px;
+  -webkit-text-stroke-color: blueviolet;
+  cursor: pointer;
+}

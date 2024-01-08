@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <!-- oncontextmenu="return false" -->
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="https://seekicon.com/free-icon-download/menu_23.svg"
+      type="image/x-icon"
+    />
+    <title>Dom practice</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.7.0/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+
+  <body>
+    <header class="w-full">
+      <div
+        class="w-8 h-8 absolute right-12 top-10 overflow-hidden z-20 rounded-lg p-1 icon-container"
+      >
+        <img
+          id="menu-icon"
+          onclick="menuDisplay()"
+          class="cursor-pointer menu-1 active"
+          src="https://seekicon.com/free-icon-download/menu_23.svg"
+          alt=""
+        />
+      </div>
+      <div class="h-screen">
+        <h1 class="text-4xl text-center font-bold py-10">Play With Color</h1>
+        <div class="flex items-center justify-center space-x-3">
+          <button
+            id="red"
+            class="bg-red-400 py-1 px-6 font-medium rounded-full"
+          >
+            Red
+          </button>
+          <button
+            id="blue"
+            class="bg-blue-400 py-1 px-6 font-medium rounded-full"
+          >
+            Blue
+          </button>
+          <button
+            id="yellow"
+            class="bg-yellow-400 py-1 px-6 font-medium rounded-full"
+          >
+            Yellow
+          </button>
+          <button
+            id="green"
+            class="bg-green-400 py-1 px-6 font-medium rounded-full"
+          >
+            Green
+          </button>
+          <button
+            id="purple"
+            class="bg-purple-400 py-1 px-6 font-medium rounded-full"
+          >
+            Purple
+          </button>
+          <button
+            id="orange"
+            class="bg-orange-400 py-1 px-6 font-medium rounded-full"
+          >
+            Orange
+          </button>
+        </div>
+      </div>
+      <!-- menu content  -->
+      <div class="w-full h-auto absolute top-0 hidden z-10" id="main-menu">
+        <ul class="w-11/12 mx-auto pt-28 pb-5">
+          <a class="text-5xl font-extrabold text-white block py-5 menu">
+            Home
+          </a>
+          <a class="text-5xl font-extrabold text-white block py-5 menu">
+            Blog
+          </a>
+          <a class="text-5xl font-extrabold text-white block py-5 menu">
+            Contact
+          </a>
+          <a class="text-5xl font-extrabold text-white block py-5 menu">
+            About
+          </a>
+        </ul>
+      </div>
+    </header>
+
+    <main></main>
+
+    <footer></footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./js/dom.js"></script>
+    <script src="t.js"></script>
+  </body>
+</html>
